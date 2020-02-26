@@ -1,0 +1,55 @@
+{
+  "name": "@exoshtw/rest-client",
+  "version": "0.1.2",
+  "description": "Client implementation for RestFul API",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx eslint ./src",
+    "build": "rm -rf lib/**; npx babel src --out-dir lib --copy-files",
+    "prepublish": "npm run lint",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exoshtw/rest-client.git"
+  },
+  "keywords": [
+    "rest",
+    "api",
+    "restful",
+    "api",
+    "client"
+  ],
+  "author": "Exos <exos@kaktheplanet.xyz>",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/exos/rest-client/issues"
+  },
+  "homepage": "https://github.com/exos/rest-client#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/node": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-private-methods": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-recommended": "^4.0.0",
+    "eslint-plugin-jest": "^23.8.0",
+    "husky": "^4.2.3",
+    "jest": "^25.1.0",
+    "jest-cli": "^25.1.0",
+    "jest-spec-reporter": "^1.0.12"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.8.4",
+    "debug": "^4.1.1",
+    "extendable-error": "^0.1.5",
+    "http-status-codes": "^1.4.0",
+    "qs": "^6.9.1"
+  }
+}
