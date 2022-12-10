@@ -50,6 +50,6 @@
     "debug": "^4.1.1",
     "extendable-error": "^0.1.5",
     "http-status-codes": "^1.4.0",
-    "qs": "^6.9.1"
+    "qs": "^6.9.7"
   }
 }
